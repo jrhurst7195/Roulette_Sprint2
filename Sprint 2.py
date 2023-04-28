@@ -30,7 +30,7 @@ print("We are starting you out at", 50 * 2,
 def get_bet():
     """
 
-    :return:
+    :return: what ever player bets
     """
     while True:
         bet = input(
@@ -61,7 +61,7 @@ description goes here
 def spin_wheel():
     """
 
-    :return:
+    :return: a random int
     """
     return random.randint(0, 36)
 
@@ -69,9 +69,9 @@ def spin_wheel():
 def get_outcome(bet, result):
     """
 
-    :param bet:
-    :param result:
-    :return:
+    :param bet: amount player bets
+    :param result: win or loss
+    :return: bet amount doubled or lost
     """
     if bet == "even":
         if result == 0:
@@ -118,7 +118,7 @@ def get_outcome(bet, result):
 def play_game(balance):
     """
 
-    :param balance:
+    :param balance: How many chips player has
     """
     while True:
         print("You have", balance, "chips.")
